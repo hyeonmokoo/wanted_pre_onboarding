@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "recruit": {
+    "username": null,
+    "password": null,
+    "database": "recruit",
+    "host": "127.0.0.1",
+    "storage": "./data/recruit.db",
+    "dialect": "sqlite"
+  }
+}
