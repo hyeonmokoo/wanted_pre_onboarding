@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recruit Board</title>
+</head>
+<body>
+<h1>채용공고 리스트</h1>
+<table>
+    <tr>
+        <td>회사 ID</td>
+        <td>회사 이름</td>
+        <td>근무 국가</td>
+        <td>근무 지역</td>
+        <td>채용 직무</td>
+        <td>연봉</td>
+        <td>채용 기술</td>
+        <td>채용 내용</td>
+    </tr>
+    <% for(let rboard of rboard) { %>
+        <tr>
+            <td><%= rboard.rboard_id %></td>
+            <td><%= rboard.company_id %></td>
+            <td><%= rboard.company_name %></td>
+            <td><%= rboard.nation %></td>
+            <td><%= rboard.region %></td>
+            <td><%= rboard.position %></td>
+            <td><%= rboard.salary %></td>
+            <td><%= rboard.skill %></td>
+            <td><%= rboard.post %></td>
+            <td><button><a href="/rboard/<%=rboard.rboard_id%>">수정하기</a></button></td>
+            
+            <form action="/rboard/<%=rboard.rboard_id%>?_method=DELETE" method="post">
+                <td><input type="submit" value="삭제하기"></input></td>
+            </form>
+        </tr>
+    <% } %>
+</table>
+</body>
+</html>

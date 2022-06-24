@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recruit Add Board</title>
+</head>
+<body>
+<h1>채용공고 추가하기</h1>
+<hr>
+
+<form action="/rboard" method="POST">
+    <table>
+        <tr>
+            <td><input type="number" name="inputCompanyId" placeholder="회사ID 를 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputCompanyName" placeholder="회사 이름을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputNation" placeholder="근무 국가를 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputRegion" placeholder="근무 지역을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputPosition" placeholder="직무를 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="inputSalary" placeholder="연봉(만원)을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputSkill" placeholder="채용기술을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputPost" placeholder="채용 내용을 입력하세요."></td>
+        </tr>
+    </table>
+    <input type="submit" value="전송하기">
+</form>
+</body>
+</html>
